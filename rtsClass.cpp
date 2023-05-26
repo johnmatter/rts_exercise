@@ -81,7 +81,7 @@ void rtsClass::rotateString() {
         // keep the last char so we can insert it at the beginning
         char lastChar = this->rotatedString[this->stringLength-1];
         // bump each char to the right by one index
-        for (int n=this->stringLength-1; n>=0; n--) {
+        for (int n=this->stringLength-2; n>=0; n--) {
              this->rotatedString[n+1] = this->rotatedString[n];
         }
         this->rotatedString[0] = lastChar;
